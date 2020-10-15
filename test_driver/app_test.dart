@@ -7,7 +7,7 @@ void main() {
     await Future<void>.delayed(Duration(seconds: seconds));
   }
 
-  group('Login App', () {
+  group('Login firebase App', () {
     FlutterDriver driver;
 
     // Connect to the Flutter driver before running any tests.
@@ -28,7 +28,7 @@ void main() {
     });
 
     test(
-      'Check sing in when inputs no registred credentials',
+      'Check sing in when inputs NO registred credentials',
       () async {
         await driver.clearTimeline();
         // find widgets
